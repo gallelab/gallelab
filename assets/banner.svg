@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Galle Lab: turning tourism into data, from Cali, Colombia">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d2624"/>
+      <stop offset="1" stop-color="#1f4d45"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3b2"/>
+      <stop offset="1" stop-color="#2c6f5c"/>
+    </linearGradient>
+    <radialGradient id="fog">
+      <stop offset="0" stop-color="#e6f0ea" stop-opacity="0.34"/>
+      <stop offset="0.6" stop-color="#e6f0ea" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#e6f0ea" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .drift { animation: drift 20s ease-in-out infinite alternate; }
+      .drift2 { animation: drift 28s ease-in-out infinite alternate-reverse; }
+      @keyframes drift { from { transform: translateX(-70px); } to { transform: translateX(70px); } }
+      .bird { animation: fly 7s ease-in-out infinite; }
+      @keyframes fly { 0%, 100% { transform: translate(0px, 0px); } 50% { transform: translate(16px, -9px); } }
+      .grow { transform-box: fill-box; transform-origin: 50% 100%; animation: grow 1.4s cubic-bezier(.2,.8,.2,1) both; }
+      @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+      .trend { stroke-dasharray: 6 7; animation: dash 30s linear infinite; }
+      @keyframes dash { to { stroke-dashoffset: -260; } }
+      text { font-family: "Segoe UI", -apple-system, Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#sky)"/>
+
+  <!-- far ridge -->
+  <path d="M0 248 C80 214 160 222 240 206 S400 196 480 212 S640 182 720 198 S880 172 960 186 S1120 168 1200 180 L1200 340 L0 340 Z" fill="#2a5c52" opacity="0.55"/>
+
+  <!-- bar chart rising like the forest -->
+  <g fill="url(#bar)">
+    <rect class="grow" style="animation-delay:.05s" x="730" y="230" width="30" height="80" rx="3"/>
+    <rect class="grow" style="animation-delay:.10s" x="772" y="205" width="30" height="105" rx="3"/>
+    <rect class="grow" style="animation-delay:.15s" x="814" y="220" width="30" height="90" rx="3"/>
+    <rect class="grow" style="animation-delay:.20s" x="856" y="180" width="30" height="130" rx="3"/>
+    <rect class="grow" style="animation-delay:.25s" x="898" y="195" width="30" height="115" rx="3"/>
+    <rect class="grow" style="animation-delay:.30s" x="940" y="150" width="30" height="160" rx="3"/>
+    <rect class="grow" style="animation-delay:.35s" x="982" y="165" width="30" height="145" rx="3"/>
+    <rect class="grow" style="animation-delay:.40s" x="1024" y="125" width="30" height="185" rx="3"/>
+    <rect class="grow" style="animation-delay:.45s" x="1066" y="140" width="30" height="170" rx="3"/>
+    <rect class="grow" style="animation-delay:.50s" x="1108" y="100" width="30" height="210" rx="3"/>
+  </g>
+
+  <!-- trend line that becomes a flight path -->
+  <polyline class="trend" points="745,230 787,205 829,220 871,180 913,195 955,150 997,165 1039,125 1081,140 1123,100 1146,74" fill="none" stroke="#f2c14e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#f2c14e">
+    <circle cx="745" cy="230" r="3.5"/><circle cx="787" cy="205" r="3.5"/><circle cx="829" cy="220" r="3.5"/>
+    <circle cx="871" cy="180" r="3.5"/><circle cx="913" cy="195" r="3.5"/><circle cx="955" cy="150" r="3.5"/>
+    <circle cx="997" cy="165" r="3.5"/><circle cx="1039" cy="125" r="3.5"/><circle cx="1081" cy="140" r="3.5"/>
+    <circle cx="1123" cy="100" r="3.5"/>
+  </g>
+
+  <!-- bird at the end of the line -->
+  <g class="bird">
+    <path transform="translate(1140 50)" d="M0 12 C9 1 19 1 26 10 C33 1 43 1 52 12 C43 8 34 9 26 17 C18 9 9 8 0 12 Z" fill="#f4f7f5"/>
+  </g>
+
+  <!-- mist band 1 -->
+  <g class="drift" fill="url(#fog)"><ellipse cx="260" cy="258" rx="360" ry="30"/><ellipse cx="820" cy="262" rx="420" ry="26"/></g>
+
+  <!-- mid ridge -->
+  <path d="M0 300 C60 270 120 262 180 276 S300 248 380 262 S500 238 580 258 S700 250 780 270 S900 248 980 266 S1100 252 1200 268 L1200 340 L0 340 Z" fill="#163d36"/>
+
+  <!-- mist band 2 -->
+  <g class="drift2" fill="url(#fog)"><ellipse cx="520" cy="298" rx="460" ry="24"/><ellipse cx="1120" cy="292" rx="300" ry="22"/></g>
+
+  <!-- front ridge -->
+  <path d="M0 320 C100 300 200 304 300 312 S480 296 580 306 S760 318 860 304 S1060 312 1200 302 L1200 340 L0 340 Z" fill="#0b2220"/>
+
+  <!-- text -->
+  <text x="70" y="92" fill="#8fd3b2" font-size="15" font-weight="600" letter-spacing="5">GALLE LAB</text>
+  <text class="mono" x="208" y="92" fill="#8fd3b2" fill-opacity="0.6" font-size="13">· 3.45° N, 76.53° W</text>
+  <text x="68" y="152" fill="#f4f7f5" font-size="50" font-weight="700">Turning tourism into data</text>
+  <text x="70" y="196" fill="#c9dbd3" font-size="20">Tour guide in Cali, Colombia · Data analyst in training</text>
+</svg>
