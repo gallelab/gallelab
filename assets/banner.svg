@@ -48,7 +48,7 @@
   </g>
 
   <!-- trend line that becomes a flight path -->
-  <polyline class="trend" points="745,230 787,205 829,220 871,180 913,195 955,150 997,165 1039,125 1081,140 1123,100 1146,74" fill="none" stroke="#f2c14e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline class="trend" points="745,230 787,205 829,220 871,180 913,195 955,150 997,165 1039,125 1081,140 1123,100 1132,76" fill="none" stroke="#f2c14e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   <g fill="#f2c14e">
     <circle cx="745" cy="230" r="3.5"/><circle cx="787" cy="205" r="3.5"/><circle cx="829" cy="220" r="3.5"/>
     <circle cx="871" cy="180" r="3.5"/><circle cx="913" cy="195" r="3.5"/><circle cx="955" cy="150" r="3.5"/>
@@ -58,7 +58,7 @@
 
   <!-- bird at the end of the line -->
   <g class="bird">
-    <path transform="translate(1140 50)" d="M0 12 C9 1 19 1 26 10 C33 1 43 1 52 12 C43 8 34 9 26 17 C18 9 9 8 0 12 Z" fill="#f4f7f5"/>
+    <path transform="translate(1112 50)" d="M0 12 C9 1 19 1 26 10 C33 1 43 1 52 12 C43 8 34 9 26 17 C18 9 9 8 0 12 Z" fill="#f4f7f5"/>
   </g>
 
   <!-- mist band 1 -->
